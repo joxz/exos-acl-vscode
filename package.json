@@ -1,0 +1,30 @@
+{
+    "name": "exos-acl",
+    "displayName": "exos-acl",
+    "description": "Extreme XOS ACL Language Support",
+    "version": "0.0.1",
+    "publisher": "jo",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "exos-acl",
+            "aliases": ["exos-acl", "pol"],
+            "extensions": [".pol"],
+            "configuration": "./exos-acl.configuration.json"
+        }],
+        "grammars": [{
+            "language": "exos-acl",
+            "scopeName": "text.exos-acl",
+            "path": "./syntaxes/exos-acl.tmLanguage"
+        }],
+        "snippets":[{
+            "language": "exos-acl",
+            "path": "./snippets/exos-acl.json"
+        }]
+    }
+}

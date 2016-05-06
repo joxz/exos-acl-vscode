@@ -1,0 +1,13 @@
+{	
+	"entry": {
+		"prefix": "entry",
+		"body": [
+			"entry ${0:name} {",
+			"\tif match ${1:all or any} {",
+			"\t\t${2:match condition};",
+			"\t} then {",
+			"\t\t${3:action};",
+			"}"
+		],
+		"description": "Entry block snippet"
+	}
